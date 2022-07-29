@@ -24,6 +24,13 @@ const getInformation = async () => {
 
 getInformation();
 
+function error() {
+  const div = document.querySelectorAll("label");
+  div.forEach((divs) => {
+    divs.classList.add("error");
+  });
+}
+
 form.addEventListener("click", (e) => {
   e.preventDefault();
   const url = new URL(window.location);
@@ -33,7 +40,17 @@ form.addEventListener("click", (e) => {
   const image = document.querySelector("[data-image]").value;
   const category = document.querySelector("[data-select]").value;
 
-  services.editProduct(name, price, image, category, id).then(() => {
-    window.location.href = "/Challenge4-ORACLE-ONE/screens/login-products.html";
-  });
+  if (
+    name.value !== "" &&
+    price.value !== "" &&
+    categoria.value !== "" &&
+    image.value !== ""
+  ) {
+    services.editProduct(name, price, image, category, id).then(() => {
+      window.location.href =
+        "/Challenge4-ORACLE-ONE/screens/login-products.html";
+    });
+  } else {
+    error();
+  }
 });
