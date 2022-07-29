@@ -7,4 +7,4 @@ e-Commerce Alura Geek
 * Agregar, editar y eliminar productos por categoría (API) en apartado Login (Ingreso con usuario y contraseña)
 * JSON-Server hosteado en Heroku.
 
-Live preview: https://github.com/federeinoso/Challenge4-ORACLE-ONE
+Live preview: https://federeinoso.github.io/Challenge4-ORACLE-ONE/
