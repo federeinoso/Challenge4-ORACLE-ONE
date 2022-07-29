@@ -55,7 +55,7 @@ const editProduct = (name, price, image, category, id) => {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name, price, image }),
+    body: JSON.stringify({ name, price, image, category }),
   })
     .then((respuesta) => respuesta)
     .catch((err) => console.log(err));
