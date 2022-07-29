@@ -3,5 +3,5 @@
 e-Commerce Alura Geek
 
 * Maquetación (modelo de Figma brindado por Alura)
-* Agregar, editar y eliminar productos (API) en apartado Login (Ingreso con usuario y contraseña)
+* Agregar, editar y eliminar productos por categoría (API) en apartado Login (Ingreso con usuario y contraseña)
 * JSON-Server hosteado en Heroku.
