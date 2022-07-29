@@ -1,4 +1,4 @@
-import { services } from "../service/services.js";
+import { services } from "/Challenge4-ORACLE-ONE/service/services.js";
 
 const main = document.querySelector(".product-container");
 const url = new URL(window.location);
