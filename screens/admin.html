@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AluraGeek</title>
+      <link rel="stylesheet" href="../styles.css" />
+    </head>
+
+    <header>
+      <div class="header_1">
+        <div class="header_1a">
+          <a href="/Challenge4-ORACLE-ONE/index.html">
+            <img src="../images/Logo.svg" alt="logo"
+          /></a>
+
+          <div class="header_search">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="¿Que deseas buscar?"
+            />
+            <img src="../images/Vector.svg" alt="search" />
+          </div>
+        </div>
+        <a href="/Challenge4-ORACLE-ONE/screens/login.html"
+          ><button class="btn_admin">Menu Administrador</button></a
+        >
+      </div>
+    </header>
+    <div class="login_container admin_container">
+      <p>Agregar nuevo producto</p>
+      <div class="input-container">
+        <input
+          name="nombre"
+          id="nombre"
+          class="input"
+          type="text"
+          required
+          data-nombre
+        />
+        <label class="input-label" data-label for="nombre"
+          >Nombre del producto</label
+        >
+      </div>
+      <div class="input-container categoria">
+        <select name="categoria" id="categoria" class="categoria" data-select>
+          <option value="consolas" placeholder="Consolas">Consolas</option>
+          <option value="sillas">Sillas</option>
+        </select>
+        <label class="input-label">Categoría</label>
+      </div>
+      <div class="input-container">
+        <input
+          name="precio"
+          id="precio"
+          class="input"
+          type="number"
+          required
+          data-precio
+        />
+        <label class="input-label" data-label2 for="precio">Precio</label>
+      </div>
+      <div class="input-container">
+        <input
+          name="url"
+          id="url"
+          class="input"
+          type="text"
+          required
+          data-image
+        />
+        <label class="input-label" for="url">URL imagen del producto</label>
+      </div>
+      <button type="submit" data-btn>Agregar producto</button>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+    integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script type="module" src="/controllers/admin.js"></script>
+</html>

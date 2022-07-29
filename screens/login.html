@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>AluraGeek</title>
+      <link rel="stylesheet" href="../styles.css" />
+    </head>
+
+    <header>
+      <div class="login_header">
+        <a href="/Challenge4-ORACLE-ONE/index.html">
+          <img src="../images/Logo.svg" alt="logo"
+        /></a>
+      </div>
+    </header>
+    <div class="login_container">
+      <p>Iniciar Sesión</p>
+      <div class="input-container">
+        <input
+          name="email"
+          id="email"
+          class="input"
+          type="email"
+          required
+          data-email
+        />
+        <label class="input-label" data-label for="nombre">Email</label>
+      </div>
+      <div class="input-container">
+        <input
+          name="password"
+          id="password"
+          class="input"
+          type="password"
+          required
+          data-password
+        />
+        <label class="input-label" data-label2 for="password">Password</label>
+      </div>
+      <button type="submit" data-btn>Entrar</button>
+    </div>
+
+    <footer>
+      <div class="footer_1">
+        <img src="../images/Logo.svg" alt="logo" />
+      </div>
+      <div class="footer_list">
+        <p>Quienes somos</p>
+        <p>Politica de privacidad</p>
+        <p>Programa de fidelidad</p>
+        <p>Nuestras Tiendas</p>
+        <p>Quiero ser franquiciado</p>
+      </div>
+      <div class="footer_form">
+        <p>Hable con nosotros</p>
+        <div class="input_footer">
+          <input class="input_1" type="text" name="nombre" id="nombre" />
+          <label for="" class="footer_label">Nombre</label>
+        </div>
+        <div class="input_footer">
+          <input class="input_2" type="text" />
+          <label for="" class="footer_label">Escribe tu mensaje</label>
+        </div>
+        <button class="btn_footer">Enviar mensaje</button>
+      </div>
+    </footer>
+  </body>
+  <script defer src="/controllers/login-controller.js"></script>
+</html>
