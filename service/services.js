@@ -12,7 +12,7 @@ const newProduct = (name, price, image, id, category) => {
             <p class="item_name">${name}</p>
             <p class="price">$${price}</p>
                         <a
-                    href="/screens/product.html?id=${id}&category=${category}"
+                    href="/Challenge4-ORACLE-ONE/screens/product.html?id=${id}&category=${category}"
                     >
             <button class="btn_item">Ver producto</button> </a>
             </div>`;
