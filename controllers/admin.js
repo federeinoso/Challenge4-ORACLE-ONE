@@ -18,10 +18,10 @@ submit.addEventListener("click", (e) => {
   const image = document.querySelector("[data-image]").value;
 
   if (
-    name.value == "" &&
-    price.value == "" &&
-    categoria.value == "" &&
-    image.value == ""
+    name.value !== "" &&
+    price.value !== "" &&
+    categoria.value !== "" &&
+    image.value !== ""
   ) {
     services
       .addItem(name, price, image, categoria)
