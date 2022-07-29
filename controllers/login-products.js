@@ -26,7 +26,8 @@ const editProduct = (name, price, image, id, category) => {
     services
       .deleteProduct(category, id)
       .then((respuesta) => console.log(respuesta))
-      .catch((err) => console.log("error"));
+      .catch((err) => console.log("error"))
+      .then(() => location.reload());
   });
   return element;
 };
