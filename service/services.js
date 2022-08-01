@@ -1,5 +1,5 @@
 const newItem = (categoria) =>
-  fetch(`https://server-alura.herokuapp.com/${categoria}`).then((respuesta) =>
+  fetch(`https://localhost:3000/${categoria}`).then((respuesta) =>
     respuesta.json()
   );
 
