@@ -12,7 +12,7 @@ function uploader() {
 services
   .newItem("sillas")
   .then(uploader())
-  .then((data) => data.slice(0, 6))
+  .then((data) => data.slice(0, res()))
   .then((data) => {
     data.forEach(({ name, price, image, id, category }) => {
       const nuevaLinea = services.newProduct(name, price, image, id, category);
@@ -36,11 +36,13 @@ services
   .catch((error) => alert("Ocurrio un error"));
 
 function res() {
-  if (window.screen.availWidth === 1366) {
-    return 6;
-  } else if (window.screen.availWidth === 1920) {
-    return 9;
+  if (window.screen.availWidth <= 610) {
+    return 2;
   } else if (window.screen.availWidth <= 768) {
-    return 4;
+    return 3;
+  } else if (window.screen.availWidth <= 1366) {
+    return 6;
+  } else if (window.screen.availWidth >= 1920) {
+    return 9;
   }
 }
