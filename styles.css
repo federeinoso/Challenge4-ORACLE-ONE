@@ -98,6 +98,7 @@ body {
 .header_2_h1 {
   background-color: white;
   padding: 5px 10px;
+  line-height: 30px;
 }
 .btn_view {
   width: 130px;
@@ -385,8 +386,7 @@ select {
 }
 
 .product-image {
-  width: 500px;
-  height: 500px;
+  width: 36.6vw;
   object-fit: cover;
   margin-right: 40px;
 }
@@ -418,4 +418,84 @@ select {
   font-weight: bolder;
   font-size: 25px;
   padding: 40px 0px 10px 8vw;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 675px) {
+  .header_1 {
+    flex-direction: column;
+  }
+  .header_search {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .items {
+    width: 150px;
+  }
+
+  .item_image {
+    width: 150px;
+  }
+  .items_container {
+    justify-content: center;
+  }
+  .product-flex {
+    flex-direction: column;
+  }
+  .product-description {
+    font-size: 15px;
+  }
+
+  .product-image {
+    margin: 0;
+    width: 90%;
+  }
+}
+
+/* LOADER */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid black;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: black transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.display {
+  display: none;
 }

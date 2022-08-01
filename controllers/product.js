@@ -38,7 +38,7 @@ function shuffleArray(array) {
 
 services
   .newItem(category)
-  .then((data) => data.slice(0, 6))
+  .then((data) => data.slice(0, res()))
   .then((data) =>
     data.sort(function (a, b) {
       return 0.5 - Math.random();
@@ -51,3 +51,15 @@ services
     });
   })
   .catch((error) => alert("Ocurrio un error"));
+
+function res() {
+  if (window.screen.availWidth <= 610) {
+    return 2;
+  } else if (window.screen.availWidth <= 768) {
+    return 3;
+  } else if (window.screen.availWidth <= 1366) {
+    return 6;
+  } else if (window.screen.availWidth >= 1920) {
+    return 9;
+  }
+}
